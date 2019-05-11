@@ -2,9 +2,21 @@ body{
    
 }
 
-.container{
+.container_d{
     /* background-color: blue; */
+    width: 100%;
 }
+
+#main{
+    
+}
+#main img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    object-position: center;
+
+ }
 .hero{
     display: flex;
     justify-content: center;
@@ -37,39 +49,56 @@ li a{
                          "main main main main third four";
     grid-gap: 10px;
 }
-
-
-.main_place{
-    grid-area: main;
-    background-color: red;
-}
-
 .c_top_trendy img{
     max-width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
+.c_top_trendy a{
+    width: 100%;
+    height: 100%;
+}
+
+.main_place{
+    grid-area: main;
+    width: 100%;
+    height: 100%;
+}
+
 .second_place{
     grid-area: second;
-    background-color: blue;
 }
 
 .third_place{
     grid-area: third;
-    background-color: greenyellow;
+
 }
 
 .four_place{
     grid-area: four;
-    background-color: aqua;
+
 }
 
 .cards{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "card1 card2 card3";
     margin-top: 15px;
     justify-items: center;
     padding-bottom: 20px;
+}
+
+.card:nth-child(1){
+ grid-area: card1;
+}
+
+.card:nth-child(2){
+    grid-area: card2;
+}
+
+.card:nth-child(3){
+    grid-area: card3;
 }
 .card img{
     height: 150px;
@@ -80,6 +109,9 @@ footer{
     height: 100px;
     margin-top: 20px;
 }
+
+/* plan_trip */
+/* /plan_trip */
 @media screen and (max-width: 800px){
     .hero img{
         max-width: 100%;
@@ -95,7 +127,21 @@ footer{
                              "third four";
         grid-gap: 10px;
     }
+    
+    .cards{
+        grid-template-columns: 1fr;
+        grid-template-areas: "card1"
+                             "card2"
+                             "card3";
+        margin-top: 15px;
+        justify-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
 
+    .card{
+        margin-top: 20px;
+    }
   
 }
 
