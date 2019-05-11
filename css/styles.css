@@ -1,15 +1,19 @@
 body{
-    /* background-image: url("img/world_map.png") */
+   
+}
+
+.container{
+    /* background-color: blue; */
 }
 .hero{
     display: flex;
     justify-content: center;
     margin: 10px 0;
-    height: 80vh;
+   
 }
 .hero img{
     max-width: 100%;
-  
+    height: 80vh;
 }
 
 #logo{
@@ -40,6 +44,11 @@ li a{
     background-color: red;
 }
 
+.c_top_trendy img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .second_place{
     grid-area: second;
     background-color: blue;
@@ -55,8 +64,25 @@ li a{
     background-color: aqua;
 }
 
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 15px;
+    justify-items: center;
+    padding-bottom: 20px;
+}
+.card img{
+    height: 150px;
+    object-fit: cover;
+}
+
+footer{
+    height: 100px;
+    margin-top: 20px;
+}
 @media screen and (max-width: 800px){
-    .hero{
+    .hero img{
+        max-width: 100%;
         height: 40vh;
     }
     .c_top_trendy{
@@ -72,3 +98,4 @@ li a{
 
   
 }
+
