@@ -22,3 +22,35 @@ color:yellow !important;
 li a{
     color: white;
 }
+
+.c_top_trendy{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(4,100px);
+    grid-template-areas: "main main main main second second"
+                         "main main main main second second"
+                         "main main main main third four"
+                         "main main main main third four";
+    grid-gap: 10px;
+}
+
+
+.main_place{
+    grid-area: main;
+    background-color: red;
+}
+
+.second_place{
+    grid-area: second;
+    background-color: blue;
+}
+
+.third_place{
+    grid-area: third;
+    background-color: greenyellow;
+}
+
+.four_place{
+    grid-area: four;
+    background-color: aqua;
+}
