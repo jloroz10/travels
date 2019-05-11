@@ -1,0 +1,24 @@
+body{
+    /* background-image: url("img/world_map.png") */
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.hero img{
+    height: 80vh;
+    max-width: 100%;
+  
+}
+
+#logo{
+    max-width: 70px;
+}
+.important-text{
+color:yellow !important;
+}
+
+li a{
+    color: white;
+}
